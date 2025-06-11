@@ -1,0 +1,48 @@
+{
+  "name": "easy-crypto-utils",
+  "version": "2.0.0",
+  "description": "A set of easy-to-use cryptographic utilities for use from within projects, or from the command line.",
+  "author": "Swinomish Indian Tribal Community",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Swinomish-Indian-Tribal-Community/easy-crypto-utils.git"
+  },
+  "engines": {
+    "node": ">=20.19.0"
+  },
+  "keywords": [
+    "cryptography",
+    "encryption",
+    "decryption",
+    "command-line",
+    "utilities",
+    "aes-256",
+    "crypto",
+    "md5",
+    "hash",
+    "cli"
+  ],
+  "type": "module",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "LICENSE",
+    "readme.md"
+  ],
+  "bin": {
+    "ecu": "dist/index.js"
+  },
+  "scripts": {
+    "compile": "tsc -p tsconfig.json",
+    "build": "npm run compile",
+    "test": "vitest"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.29",
+    "typescript": "^5.8.3",
+    "vitest": "^3.2.3"
+  }
+}
