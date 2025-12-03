@@ -19,6 +19,7 @@ jobs:
   publish-npm:
     needs: build
     runs-on: ubuntu-latest
+    environment: easy-crypto-utils-publish
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
